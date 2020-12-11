@@ -8,5 +8,6 @@ namespace Jarmuvek
 {
     class SzemelyAuto : Jarmu
     {
+
     }
 }
