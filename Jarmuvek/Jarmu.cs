@@ -15,10 +15,19 @@ namespace Jarmuvek
    public abstract class Jarmu 
     {
 
-        public int Uzemanyag;
-        public int Kerekek;
-        public string Rendszam;
+        public string rendszam;
+        public int kerekek;
+        public string uzemanyag; //a kis nagy betű miatt én az angol megfelelőket fogom használni, petrol - benzin, dízel - diesel
 
+        public int maxSpeed; // az adott jármű maximum sebesége 
 
+        public static Random rnd = new Random();
+
+        protected Jarmu(string rendszam, int kerekek, string uzemanyag)
+        {
+            this.rendszam = rendszam;
+            this.kerekek = kerekek;
+            this.uzemanyag = uzemanyag;
+        }
     }
 }

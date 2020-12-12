@@ -8,6 +8,12 @@ namespace Jarmuvek
 {
     class SzemelyAuto : Jarmu
     {
+        public SzemelyAuto(string rendszam, int kerekek, string uzemanyag) : base(rendszam,4,uzemanyag)
+        { 
+        
+        }
 
+        public int maxSpeed =rnd.Next(110,171); 
+        
     }
 }
