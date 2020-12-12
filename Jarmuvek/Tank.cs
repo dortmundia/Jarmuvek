@@ -8,11 +8,17 @@ namespace Jarmuvek
 {
     class Tank : Jarmu
     {
-        public Tank(string rendszam, int kerekek, string uzemanyag) : base(rendszam, 0, "petrol") // sima tankra gondoltam nem EBR-re, ezért 0 a kereke ugyanis a rendes tankoknak lánctalpa van 
+        public Tank(string rendszam,  string uzemanyag) : base(rendszam, "petrol") // sima tankra gondoltam nem EBR-re, ezért 0 a kereke ugyanis a rendes tankoknak lánctalpa van 
         {
 
         }
-        public int maxSpeed =rnd.Next(35, 71); 
-        
+
+        int kerekek = 0;
+        public int maxSpeed =rnd.Next(35, 71);
+
+        public override string ToString()
+        {
+            return String.Format("Jarmu rendszama: {0} \n Kerekszama:{1} \n Uzemanyag tipusa: {2} \n Maximalis sebesseg: {3} \n", this.rendszam, this.kerekek, this.uzemanyag, this.maxSpeed);
+        }
     }
 }
