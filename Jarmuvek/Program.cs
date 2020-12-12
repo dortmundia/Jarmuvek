@@ -26,10 +26,19 @@ namespace Jarmuvek
             
             SzemelyAuto mustangMcQueen = new SzemelyAuto("FSTGTCS","Diesel");    //A rendszám amerikai mivel ezt nem én találtam ki: https://www.instagram.com/mustangmcqueen/
 
+            Console.WriteLine("Jármű neve: "+nameof(traktor));
             Console.WriteLine(traktor);
+
+            Console.WriteLine("Jármű neve: " + nameof(ikarusz));
             Console.WriteLine(ikarusz);
+
+            Console.WriteLine("Jármű neve: " + nameof(leopard_1));
             Console.WriteLine(leopard_1);
+
+            Console.WriteLine("Jármű neve: " + nameof(r6));
             Console.WriteLine(r6);
+
+            Console.WriteLine("Jármű neve: " + nameof(mustangMcQueen));
             Console.WriteLine(mustangMcQueen);
 
             Console.ReadKey();
